@@ -13,7 +13,3 @@ if (p1 > p2) {
         document.querySelector("h1").innerHTML = "Draw!";
     }
 }
-
-if (performance.getEntriesByType("navigation")[0].type === "reload") {
-    rollDice();
-}
