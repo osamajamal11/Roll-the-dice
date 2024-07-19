@@ -1,3 +1,4 @@
+function rollDice() {
 var p1 = Math.floor(Math.random() * 6) + 1;
 var p2 = Math.floor(Math.random() * 6) + 1;
 
@@ -9,5 +10,10 @@ if (p1 > p2) {
 } else if (p1 < p2) {
     document.querySelector("h1").innerHTML = "Player 2 Wins!";
 } else {
-    document.querySelector("h1").innerHTML = "Draw!";
+        document.querySelector("h1").innerHTML = "Draw!";
+    }
+}
+
+if (performance.getEntriesByType("navigation")[0].type === "reload") {
+    rollDice();
 }
